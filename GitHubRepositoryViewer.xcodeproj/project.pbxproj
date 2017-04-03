@@ -109,6 +109,8 @@
 				E706595B1E91C5B80060B96F /* Sources */,
 				E706595C1E91C5B80060B96F /* Frameworks */,
 				E706595D1E91C5B80060B96F /* Resources */,
+				E70659851E91CB200060B96F /* [SwiftLint] Run Script */,
+				E70659861E91CB5B0060B96F /* [Carthage] Run Script */,
 			);
 			buildRules = (
 			);
@@ -198,6 +200,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E70659851E91CB200060B96F /* [SwiftLint] Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftLint] Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		E70659861E91CB5B0060B96F /* [Carthage] Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Decodable.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = "[Carthage] Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E706595B1E91C5B80060B96F /* Sources */ = {
@@ -414,6 +452,7 @@
 				E70659811E91C5B80060B96F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E70659821E91C5B80060B96F /* Build configuration list for PBXNativeTarget "GitHubRepositoryViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +461,7 @@
 				E70659841E91C5B80060B96F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
