@@ -14,6 +14,12 @@
 		E706596D1E91C5B80060B96F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E706596C1E91C5B80060B96F /* Assets.xcassets */; };
 		E70659701E91C5B80060B96F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E706596E1E91C5B80060B96F /* LaunchScreen.storyboard */; };
 		E706597B1E91C5B80060B96F /* GitHubRepositoryViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E706597A1E91C5B80060B96F /* GitHubRepositoryViewerTests.swift */; };
+		E754E6E61E9354580077CE39 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E754E6E21E9354580077CE39 /* APIKit.framework */; };
+		E754E6E71E9354580077CE39 /* Decodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E754E6E31E9354580077CE39 /* Decodable.framework */; };
+		E754E6E81E9354580077CE39 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E754E6E41E9354580077CE39 /* Himotoki.framework */; };
+		E754E6EC1E935EB10077CE39 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E754E6EA1E935EB10077CE39 /* RxCocoa.framework */; };
+		E754E6ED1E935EB10077CE39 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E754E6EB1E935EB10077CE39 /* RxSwift.framework */; };
+		E754E6F01E935ED60077CE39 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E754E6E51E9354580077CE39 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,13 @@
 		E70659761E91C5B80060B96F /* GitHubRepositoryViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubRepositoryViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E706597A1E91C5B80060B96F /* GitHubRepositoryViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepositoryViewerTests.swift; sourceTree = "<group>"; };
 		E706597C1E91C5B80060B96F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E754E6E21E9354580077CE39 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		E754E6E31E9354580077CE39 /* Decodable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Decodable.framework; path = Carthage/Build/iOS/Decodable.framework; sourceTree = "<group>"; };
+		E754E6E41E9354580077CE39 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
+		E754E6E51E9354580077CE39 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		E754E6EA1E935EB10077CE39 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E754E6EB1E935EB10077CE39 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E754E6EE1E935EBD0077CE39 /* 1AF6F04E-ECF4-3726-BCCC-7512DF0C34ED.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "1AF6F04E-ECF4-3726-BCCC-7512DF0C34ED.bcsymbolmap"; path = "Carthage/Build/iOS/1AF6F04E-ECF4-3726-BCCC-7512DF0C34ED.bcsymbolmap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E754E6F01E935ED60077CE39 /* Result.framework in Frameworks */,
+				E754E6EC1E935EB10077CE39 /* RxCocoa.framework in Frameworks */,
+				E754E6ED1E935EB10077CE39 /* RxSwift.framework in Frameworks */,
+				E754E6E61E9354580077CE39 /* APIKit.framework in Frameworks */,
+				E754E6E71E9354580077CE39 /* Decodable.framework in Frameworks */,
+				E754E6E81E9354580077CE39 /* Himotoki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +83,7 @@
 				E70659611E91C5B80060B96F /* GitHubRepositoryViewer */,
 				E70659791E91C5B80060B96F /* GitHubRepositoryViewerTests */,
 				E70659601E91C5B80060B96F /* Products */,
+				E754E6E11E9354580077CE39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +117,20 @@
 				E706597C1E91C5B80060B96F /* Info.plist */,
 			);
 			path = GitHubRepositoryViewerTests;
+			sourceTree = "<group>";
+		};
+		E754E6E11E9354580077CE39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E754E6EE1E935EBD0077CE39 /* 1AF6F04E-ECF4-3726-BCCC-7512DF0C34ED.bcsymbolmap */,
+				E754E6EA1E935EB10077CE39 /* RxCocoa.framework */,
+				E754E6EB1E935EB10077CE39 /* RxSwift.framework */,
+				E754E6E21E9354580077CE39 /* APIKit.framework */,
+				E754E6E31E9354580077CE39 /* Decodable.framework */,
+				E754E6E41E9354580077CE39 /* Himotoki.framework */,
+				E754E6E51E9354580077CE39 /* Result.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +261,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Decodable.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			name = "[Carthage] Run Script";
 			outputPaths = (
@@ -382,6 +417,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitHubRepositoryViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.GitHubRepositoryViewer;
@@ -395,6 +434,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DEQGLB9PU4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GitHubRepositoryViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.natmark.GitHubRepositoryViewer;
