@@ -22,6 +22,7 @@
 		E754E6F01E935ED60077CE39 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E754E6E51E9354580077CE39 /* Result.framework */; };
 		E754E6F61E93662B0077CE39 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E6F51E93662B0077CE39 /* API.swift */; };
 		E754E6F81E936A220077CE39 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E6F71E936A220077CE39 /* Repository.swift */; };
+		E754E6FB1E937B1E0077CE39 /* SessionRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E6FA1E937B1E0077CE39 /* SessionRx.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		E706595F1E91C5B80060B96F /* GitHubRepositoryViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubRepositoryViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70659621E91C5B80060B96F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E70659641E91C5B80060B96F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E70659641E91C5B80060B96F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E70659671E91C5B80060B96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E706596A1E91C5B80060B96F /* GitHubRepositoryViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubRepositoryViewer.xcdatamodel; sourceTree = "<group>"; };
 		E706596C1E91C5B80060B96F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		E754E6EE1E935EBD0077CE39 /* 1AF6F04E-ECF4-3726-BCCC-7512DF0C34ED.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "1AF6F04E-ECF4-3726-BCCC-7512DF0C34ED.bcsymbolmap"; path = "Carthage/Build/iOS/1AF6F04E-ECF4-3726-BCCC-7512DF0C34ED.bcsymbolmap"; sourceTree = "<group>"; };
 		E754E6F51E93662B0077CE39 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E754E6F71E936A220077CE39 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		E754E6FA1E937B1E0077CE39 /* SessionRx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionRx.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		E754E6F31E9365B30077CE39 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E754E6F91E937ADE0077CE39 /* ExtensionsRx */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -169,6 +172,14 @@
 				E754E6F51E93662B0077CE39 /* API.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		E754E6F91E937ADE0077CE39 /* ExtensionsRx */ = {
+			isa = PBXGroup;
+			children = (
+				E754E6FA1E937B1E0077CE39 /* SessionRx.swift */,
+			);
+			name = ExtensionsRx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E754E6FB1E937B1E0077CE39 /* SessionRx.swift in Sources */,
 				E70659651E91C5B80060B96F /* ViewController.swift in Sources */,
 				E70659631E91C5B80060B96F /* AppDelegate.swift in Sources */,
 				E754E6F61E93662B0077CE39 /* API.swift in Sources */,
