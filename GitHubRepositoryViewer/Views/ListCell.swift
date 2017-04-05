@@ -7,11 +7,11 @@
 //
 
 import UIKit
-
+import PINRemoteImage
 class ListCell: UITableViewCell {
 
     @IBOutlet weak var fullNameLabel: UILabel!
-    @IBOutlet weak var avatarUrlLabel: UILabel!
+    @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var updatedAtLabel: UILabel!
     @IBOutlet weak var urlLabel: UILabel!
 
@@ -22,7 +22,7 @@ class ListCell: UITableViewCell {
 
     func configureCell(repo: Repository) {
         fullNameLabel.text = repo.fullName
-        avatarUrlLabel.text = repo.ownerAvaterUrl
+        avatarImageView.pin_setImage(from: URL(string: repo.ownerAvaterUrl!), completion: nil)
         updatedAtLabel.text = repo.updatedAt
         urlLabel.text = repo.url
     }

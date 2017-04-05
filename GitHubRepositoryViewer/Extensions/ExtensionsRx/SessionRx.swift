@@ -27,7 +27,7 @@ extension Session {
             }
         }
     }
-    
+
     class func rx_sendRequest<T: Request>(request: T) -> Observable<T.Response> {
         return shared.rx_sendRequest(request: request)
     }

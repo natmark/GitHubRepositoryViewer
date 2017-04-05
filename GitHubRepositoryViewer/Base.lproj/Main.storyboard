@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,53 +27,56 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jCt-4u-VR6">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jCt-4u-VR6" id="cSG-aQ-THT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="150" id="eMA-TW-Qeh" customClass="ListCell" customModule="GitHubRepositoryViewer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="150"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="130" id="eMA-TW-Qeh" customClass="ListCell" customModule="GitHubRepositoryViewer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eMA-TW-Qeh" id="NCg-Ma-NY6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-nD-7RD">
-                                                    <rect key="frame" x="8" y="8" width="359" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="natmark/kingyo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-nD-7RD">
+                                                    <rect key="frame" x="94" y="8" width="273" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s3-JS-iIO">
-                                                    <rect key="frame" x="8" y="66" width="359" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-01-12T21:34:54Z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s3-JS-iIO">
+                                                    <rect key="frame" x="94" y="33" width="273" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQv-lP-bTh">
-                                                    <rect key="frame" x="8" y="95" width="359" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZh-kR-hZb">
-                                                    <rect key="frame" x="8" y="37" width="359" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="74T-ef-KlX">
+                                                    <rect key="frame" x="8" y="8" width="78" height="78"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="74T-ef-KlX" secondAttribute="height" multiplier="1:1" id="1nb-Ya-qev"/>
+                                                        <constraint firstAttribute="width" constant="78" id="5Nf-8D-Y8v"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://api.github.com/repos/natmark/kingyo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQv-lP-bTh">
+                                                    <rect key="frame" x="8" y="94" width="359" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xQv-lP-bTh" firstAttribute="leading" secondItem="NCg-Ma-NY6" secondAttribute="leadingMargin" id="2yj-f9-fKJ"/>
+                                                <constraint firstItem="3s3-JS-iIO" firstAttribute="trailing" secondItem="NCg-Ma-NY6" secondAttribute="trailingMargin" id="5Jt-rK-lMb"/>
+                                                <constraint firstItem="xQv-lP-bTh" firstAttribute="top" secondItem="74T-ef-KlX" secondAttribute="bottom" constant="8" id="8Qj-1r-Wpd"/>
+                                                <constraint firstItem="f4a-nD-7RD" firstAttribute="trailing" secondItem="NCg-Ma-NY6" secondAttribute="trailingMargin" id="QsH-78-ken"/>
+                                                <constraint firstItem="74T-ef-KlX" firstAttribute="leading" secondItem="NCg-Ma-NY6" secondAttribute="leadingMargin" id="RJf-RB-IRy"/>
+                                                <constraint firstItem="f4a-nD-7RD" firstAttribute="top" secondItem="NCg-Ma-NY6" secondAttribute="topMargin" id="YwQ-4A-7pI"/>
+                                                <constraint firstItem="3s3-JS-iIO" firstAttribute="top" secondItem="f4a-nD-7RD" secondAttribute="bottom" constant="4" id="f8H-Jk-1rh"/>
+                                                <constraint firstItem="3s3-JS-iIO" firstAttribute="leading" secondItem="74T-ef-KlX" secondAttribute="trailing" constant="8" id="pfG-Ja-bKI"/>
+                                                <constraint firstItem="74T-ef-KlX" firstAttribute="top" secondItem="NCg-Ma-NY6" secondAttribute="topMargin" id="rb9-gd-8Zv"/>
+                                                <constraint firstItem="xQv-lP-bTh" firstAttribute="trailing" secondItem="NCg-Ma-NY6" secondAttribute="trailingMargin" id="tJD-8t-PLt"/>
+                                                <constraint firstItem="f4a-nD-7RD" firstAttribute="leading" secondItem="74T-ef-KlX" secondAttribute="trailing" constant="8" id="v6p-BJ-AuE"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="xQv-lP-bTh" secondAttribute="bottom" constant="8" id="xTu-76-ruq"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="avatarUrlLabel" destination="TZh-kR-hZb" id="N4k-K1-0wX"/>
+                                            <outlet property="avatarImageView" destination="74T-ef-KlX" id="qh9-8h-XEt"/>
                                             <outlet property="fullNameLabel" destination="f4a-nD-7RD" id="rWF-hR-dcR"/>
                                             <outlet property="updatedAtLabel" destination="3s3-JS-iIO" id="ubE-5r-E90"/>
                                             <outlet property="urlLabel" destination="xQv-lP-bTh" id="q0X-Vf-G5s"/>
@@ -103,7 +108,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nn-mG-E6O" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6an-w4-kLh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6an-w4-kLh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
