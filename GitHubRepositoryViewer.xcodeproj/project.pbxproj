@@ -23,6 +23,8 @@
 		E754E6F61E93662B0077CE39 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E6F51E93662B0077CE39 /* API.swift */; };
 		E754E6F81E936A220077CE39 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E6F71E936A220077CE39 /* Repository.swift */; };
 		E754E6FB1E937B1E0077CE39 /* SessionRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E6FA1E937B1E0077CE39 /* SessionRx.swift */; };
+		E754E7001E94C7F30077CE39 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E6FF1E94C7F30077CE39 /* ListViewModel.swift */; };
+		E754E7021E94C82C0077CE39 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754E7011E94C82C0077CE39 /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +58,9 @@
 		E754E6EE1E935EBD0077CE39 /* 1AF6F04E-ECF4-3726-BCCC-7512DF0C34ED.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "1AF6F04E-ECF4-3726-BCCC-7512DF0C34ED.bcsymbolmap"; path = "Carthage/Build/iOS/1AF6F04E-ECF4-3726-BCCC-7512DF0C34ED.bcsymbolmap"; sourceTree = "<group>"; };
 		E754E6F51E93662B0077CE39 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E754E6F71E936A220077CE39 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
-		E754E6FA1E937B1E0077CE39 /* SessionRx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionRx.swift; sourceTree = SOURCE_ROOT; };
+		E754E6FA1E937B1E0077CE39 /* SessionRx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionRx.swift; sourceTree = "<group>"; };
+		E754E6FF1E94C7F30077CE39 /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		E754E7011E94C82C0077CE39 /* ListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				E754E6F31E9365B30077CE39 /* Extensions */,
 				E754E6F21E9364F00077CE39 /* Models */,
+				E754E6FE1E94C7E30077CE39 /* ViewModels */,
 				E754E6F11E9363D60077CE39 /* Views */,
 				E70659621E91C5B80060B96F /* AppDelegate.swift */,
 				E706596C1E91C5B80060B96F /* Assets.xcassets */,
@@ -144,6 +149,7 @@
 		E754E6F11E9363D60077CE39 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E754E7011E94C82C0077CE39 /* ListCell.swift */,
 				E70659641E91C5B80060B96F /* ViewController.swift */,
 			);
 			path = Views;
@@ -180,6 +186,16 @@
 				E754E6FA1E937B1E0077CE39 /* SessionRx.swift */,
 			);
 			name = ExtensionsRx;
+			path = ExtensionsRx;
+			sourceTree = "<group>";
+		};
+		E754E6FE1E94C7E30077CE39 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E754E6FF1E94C7F30077CE39 /* ListViewModel.swift */,
+			);
+			name = ViewModels;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,8 +344,10 @@
 			files = (
 				E754E6FB1E937B1E0077CE39 /* SessionRx.swift in Sources */,
 				E70659651E91C5B80060B96F /* ViewController.swift in Sources */,
+				E754E7001E94C7F30077CE39 /* ListViewModel.swift in Sources */,
 				E70659631E91C5B80060B96F /* AppDelegate.swift in Sources */,
 				E754E6F61E93662B0077CE39 /* API.swift in Sources */,
+				E754E7021E94C82C0077CE39 /* ListCell.swift in Sources */,
 				E754E6F81E936A220077CE39 /* Repository.swift in Sources */,
 				E706596B1E91C5B80060B96F /* GitHubRepositoryViewer.xcdatamodeld in Sources */,
 			);
