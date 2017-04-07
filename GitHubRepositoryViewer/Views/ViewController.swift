@@ -10,7 +10,6 @@ import UIKit
 import APIKit
 import RxSwift
 import RxCocoa
-import PKHUD
 
 class ViewController: UIViewController, UITableViewDelegate, UISearchBarDelegate {
 
@@ -43,7 +42,6 @@ class ViewController: UIViewController, UITableViewDelegate, UISearchBarDelegate
             }.subscribe(onNext: { [unowned self] x in
                 self.tableView.reloadData()
             }, onError: { error in
-                 HUD.flash(.error, delay: 1.0)
             }, onCompleted: { () in
             }, onDisposed: { () in
             }).addDisposableTo(disposeBag)
@@ -54,7 +52,6 @@ class ViewController: UIViewController, UITableViewDelegate, UISearchBarDelegate
                 self.navigationItem.title = q!
                 self.viewModel.reloadData(userName: q!)
             }, onError: { error in
-            HUD.flash(.error, delay: 1.0)
             }, onCompleted: { () in
             }, onDisposed: { () in
             }).addDisposableTo(disposeBag)

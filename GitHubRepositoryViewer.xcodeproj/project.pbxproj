@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E70409301E94D63C008D6137 /* PINRemoteImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E704092E1E94D63C008D6137 /* PINRemoteImage.framework */; };
-		E70409311E94D63C008D6137 /* PKHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E704092F1E94D63C008D6137 /* PKHUD.framework */; };
 		E70409331E94D8AC008D6137 /* PINCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E70409321E94D8AC008D6137 /* PINCache.framework */; };
 		E70659631E91C5B80060B96F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70659621E91C5B80060B96F /* AppDelegate.swift */; };
 		E70659651E91C5B80060B96F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70659641E91C5B80060B96F /* ViewController.swift */; };
@@ -75,7 +74,6 @@
 			files = (
 				E70409331E94D8AC008D6137 /* PINCache.framework in Frameworks */,
 				E70409301E94D63C008D6137 /* PINRemoteImage.framework in Frameworks */,
-				E70409311E94D63C008D6137 /* PKHUD.framework in Frameworks */,
 				E754E6F01E935ED60077CE39 /* Result.framework in Frameworks */,
 				E754E6EC1E935EB10077CE39 /* RxCocoa.framework in Frameworks */,
 				E754E6ED1E935EB10077CE39 /* RxSwift.framework in Frameworks */,
@@ -334,7 +332,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PKHUD.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PINRemoteImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PINCache.framework",
 			);
