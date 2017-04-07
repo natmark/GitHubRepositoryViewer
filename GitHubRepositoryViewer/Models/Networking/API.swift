@@ -6,7 +6,6 @@
 //  Copyright © 2017年 Atsuya Sato. All rights reserved.
 //
 
-import Foundation
 import APIKit
 import Himotoki
 

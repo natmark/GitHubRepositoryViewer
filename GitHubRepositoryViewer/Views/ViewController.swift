@@ -25,16 +25,11 @@ class ViewController: UIViewController, UITableViewDelegate, UISearchBarDelegate
         searchBar.delegate = self
         tableView.delegate = self
 
-        setupViewModel()
+        tableView.dataSource = viewModel
 
         bind()
     }
 
-    func setupViewModel() {
-        tableView.dataSource = viewModel
-
-        viewModel.reloadData(userName: "")
-    }
     func bind() {
         // Connection
         viewModel.repos.asObservable().filter { x in
