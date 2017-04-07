@@ -10,16 +10,12 @@ import UIKit
 import RxSwift
 import APIKit
 
-/// List View Model
 class ListViewModel: NSObject, UITableViewDataSource {
 
-    /// Cell Identifier
     private var cellIdentifier = "ListCell"
 
-    /// Entry
     private(set) var repos = Variable<[Repository]>([])
 
-    /// Entry
     private(set) var error = Variable<Error?>(nil)
 
     let disposeBag = DisposeBag()
@@ -28,11 +24,8 @@ class ListViewModel: NSObject, UITableViewDataSource {
         super.init()
     }
 
-    /**
-     Reload
-     */
-    func reloadData() {
-        let request = FetchRepositoryRequest(userName: "natmark")
+    func reloadData(userName: String) {
+        let request = FetchRepositoryRequest(userName: userName)
         Session.rx_sendRequest(request: request)
             .subscribe {
                 [weak self] event in
