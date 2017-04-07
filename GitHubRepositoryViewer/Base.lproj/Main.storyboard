@@ -40,7 +40,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-01-12T21:34:54Z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s3-JS-iIO">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s3-JS-iIO">
                                                     <rect key="frame" x="94" y="33" width="273" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
@@ -78,7 +78,7 @@
                                         <connections>
                                             <outlet property="avatarImageView" destination="74T-ef-KlX" id="qh9-8h-XEt"/>
                                             <outlet property="fullNameLabel" destination="f4a-nD-7RD" id="rWF-hR-dcR"/>
-                                            <outlet property="updatedAtLabel" destination="3s3-JS-iIO" id="ubE-5r-E90"/>
+                                            <outlet property="languageLabel" destination="3s3-JS-iIO" id="vQs-po-07P"/>
                                             <outlet property="urlLabel" destination="xQv-lP-bTh" id="q0X-Vf-G5s"/>
                                         </connections>
                                     </tableViewCell>
@@ -116,7 +116,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nn-mG-E6O" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6an-w4-kLh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6an-w4-kLh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

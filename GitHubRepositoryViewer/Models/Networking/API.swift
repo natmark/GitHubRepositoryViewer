@@ -36,7 +36,7 @@ extension GitHubRequest where Response: Decodable {
 struct FetchRepositoryRequest: GitHubRequest {
     var userName: String
     var path: String {
-        return String(format: "/users/%@/repos", self.userName)
+        return "/users/\(self.userName)/repos"
     }
     typealias Response = [Repository]
 
