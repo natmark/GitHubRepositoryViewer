@@ -10,14 +10,14 @@ import Himotoki
 
 struct Repository: Decodable {
     let fullName: String
-    let ownerAvaterUrl: String
+    let ownerAvatarUrl: String
     let language: String?
     let url: String
 
     static func decode(_ e: Extractor) throws -> Repository {
         return try Repository(
             fullName: e <| "full_name",
-            ownerAvaterUrl: e <| ["owner", "avatar_url"],
+            ownerAvatarUrl: e <| ["owner", "avatar_url"],
             language: e <|? "language",
             url: e <| "url"
         )

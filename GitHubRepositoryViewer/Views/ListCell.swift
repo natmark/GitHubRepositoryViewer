@@ -21,7 +21,7 @@ class ListCell: UITableViewCell {
 
     func configureCell(repo: Repository) {
         fullNameLabel.text = repo.fullName
-        avatarImageView.pin_setImage(from: URL(string: repo.ownerAvaterUrl), completion: nil)
+        avatarImageView.pin_setImage(from: URL(string: repo.ownerAvatarUrl), completion: nil)
         languageLabel.text = repo.language ?? ""
         urlLabel.text = repo.url
     }
