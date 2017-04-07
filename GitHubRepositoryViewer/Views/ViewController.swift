@@ -12,30 +12,29 @@ import RxSwift
 import RxCocoa
 import PKHUD
 
-class ViewController: UIViewController, UITableViewDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
 
-    /// View Model
     private let viewModel = ListViewModel()
 
     let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        // ViewModel
+        searchBar.delegate = self
+        tableView.delegate = self
+
         setupViewModel()
 
-        // Rx
         bind()
     }
 
     func setupViewModel() {
         tableView.dataSource = viewModel
-        tableView.delegate = self
-        // Load
-        viewModel.reloadData()
+
+        viewModel.reloadData(userName: "")
     }
     func bind() {
         // Connection
@@ -48,10 +47,30 @@ class ViewController: UIViewController, UITableViewDelegate {
             }, onCompleted: { () in
             }, onDisposed: { () in
             }).addDisposableTo(disposeBag)
+
+        //search
+        searchBar.rx.text
+            .subscribe(onNext: { [unowned self] q in
+                self.navigationItem.title = q!
+                self.viewModel.reloadData(userName: q!)
+            }, onError: { error in
+            HUD.flash(.error, delay: 1.0)
+            }, onCompleted: { () in
+            }, onDisposed: { () in
+            }).addDisposableTo(disposeBag)
     }
+    // MARK: - TableView
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 130
     }
+    // MARK: - SearchBar
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

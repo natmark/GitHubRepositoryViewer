@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YuX-1y-jjM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="130" id="eMA-TW-Qeh" customClass="ListCell" customModule="GitHubRepositoryViewer" customModuleProvider="target">
@@ -84,18 +84,26 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" placeholder="input username" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pan-HJ-gJ8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="webSearch"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YuX-1y-jjM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0Id-F3-UdT"/>
+                            <constraint firstItem="pan-HJ-gJ8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="500-lR-jjG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YuX-1y-jjM" secondAttribute="bottom" id="8us-SG-SAE"/>
+                            <constraint firstAttribute="trailing" secondItem="pan-HJ-gJ8" secondAttribute="trailing" id="K6g-Ai-YI2"/>
                             <constraint firstAttribute="trailing" secondItem="YuX-1y-jjM" secondAttribute="trailing" id="Zkj-LP-14o"/>
                             <constraint firstItem="YuX-1y-jjM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nMr-l7-ckB"/>
+                            <constraint firstItem="YuX-1y-jjM" firstAttribute="top" secondItem="pan-HJ-gJ8" secondAttribute="bottom" id="s00-7a-fmu"/>
+                            <constraint firstItem="pan-HJ-gJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zNx-15-L4K"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" id="rRp-SG-smE"/>
+                    <navigationItem key="navigationItem" id="0B8-AG-0Cw"/>
                     <connections>
+                        <outlet property="searchBar" destination="pan-HJ-gJ8" id="sGT-hE-IAu"/>
                         <outlet property="tableView" destination="YuX-1y-jjM" id="vpn-RY-tFt"/>
                     </connections>
                 </viewController>
@@ -108,10 +116,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nn-mG-E6O" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6an-w4-kLh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6an-w4-kLh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
